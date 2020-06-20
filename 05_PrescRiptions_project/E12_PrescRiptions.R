@@ -12,7 +12,7 @@ settings = PrescRiptions::setConfig(rootdir = "output",
                                     month = 07, 
                                     region = "England")
 
-# Create all paths for the package, relative to the root directory you have choosen
+# Create all paths for the package, relative to the root directory you have chosen
 dirs = dirsGen(settings)
 
 #######################################
