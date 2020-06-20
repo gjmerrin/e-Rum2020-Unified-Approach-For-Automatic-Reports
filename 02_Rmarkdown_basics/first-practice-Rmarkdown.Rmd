@@ -1,7 +1,7 @@
 ---
 title: "first-practice-Rmarkdown"
-author: "SOS-plots"
-date: "6/20/2020"
+author: "Gabriel (Joey) Merrin"
+date: " `r format(Sys.time(), ' %B %e %Y')`" # great way to code date rather than hard code
 output: html_document
 ---
 
@@ -28,3 +28,10 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## control+option+i to add a chunk
+# see slide 2 
+```{r}
+
+```
+
