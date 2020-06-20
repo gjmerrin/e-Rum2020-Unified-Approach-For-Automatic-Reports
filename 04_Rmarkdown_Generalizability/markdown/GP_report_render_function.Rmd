@@ -28,7 +28,7 @@ monthNames = c("January", "February", "March", "April", "May", "June", "July",
   
 NameMonth = monthNames[as.numeric(params$month)]
 
-settings = PrescRiptions::setConfig(rootdir = "/cloud/project/output",
+settings = PrescRiptions::setConfig(rootdir = "./output",
                                     year = params$year, month = params$month, region = "England")
 
 dataAll = PrescRiptions::monthlyData_import(settings, sample = TRUE)

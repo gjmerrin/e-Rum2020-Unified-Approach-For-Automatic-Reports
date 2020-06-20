@@ -1,11 +1,11 @@
 # define render parmeters outside the render function
 
-inputFile = "markdown/GP_report_render_function.Rmd"
+inputFile = "./markdown/GP_report_render_function.Rmd"
 outputDir = "output"
 yyyy = 2019
 mm = "07"
 selected_gp = "A81005"
-nameFile = "GP_report_render_function_E10.html"
+nameFile = "./output/GP_report_render_function_E10.html"
 
 
 

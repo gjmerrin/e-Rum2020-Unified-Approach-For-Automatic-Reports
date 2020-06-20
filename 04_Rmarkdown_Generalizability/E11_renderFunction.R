@@ -24,4 +24,4 @@ renderReport(inputFile = "markdown/GP_report_render_function.Rmd",
              yyyy = 2019,
              mm = "07",
              selected_gp = "A81005",
-             nameFile = "GP_report_render_function_E11.html")
+             nameFile = "./output/GP_report_render_function_E11.html")
