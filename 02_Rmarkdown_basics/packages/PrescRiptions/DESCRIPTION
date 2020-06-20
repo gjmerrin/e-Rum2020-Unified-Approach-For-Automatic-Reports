@@ -1,0 +1,24 @@
+Package: PrescRiptions
+Type: Package
+Title: aggregations and reports on Practice Level Prescription Data in
+        England
+Version: 0.2.5
+Date: 05/06/2020
+Authors@R: c(person("Cristina", "Muschitiello", role = "aut", email =
+        "cristina.muschitiello@gmail.com"), person("Cristina", "Muschitiello",
+        role = "cre", email = "cristina.muschitiello@gmail.com"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL
+Depends: R (>= 3.5.0)
+Imports: yaml, data.table, stringr, readr, RCurl, config, ggthemes,
+        ggplot2, prettydoc, rmarkdown, scales, tidyverse, dplyr,
+        kableExtra
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-05 13:04:45 UTC; musch
+Author: Cristina Muschitiello [aut],
+  Cristina Muschitiello [cre]
+Maintainer: Cristina Muschitiello <cristina.muschitiello@gmail.com>
