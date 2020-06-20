@@ -24,12 +24,15 @@ options(scipen = 999)
 ggplot2::theme_set(ggthemes::theme_economist()) # Sets graphs themes to "The Economist" style
 
 monthNames = c("January", "February", "March", "April", "May", "June", "July",
-               "August","September", "October", "November","December")   # Object to recall all months names 
+               "August","September", "October", "November", "December")   # Object to recall all months names 
   
 NameMonth = monthNames[as.numeric(params$month)]# Months resulting from parameter
 
-settings = PrescRiptions::setConfig(rootdir = "/cloud/project/output",
-                                    year = params$year, month = params$month, region = "England")# Configuration option defined in the Prescriptions package. This line specifies where to save the output automatically downloaded from the package (rootdir), and provides parameters for year, month and region.
+settings = PrescRiptions::setConfig(rootdir = "./output",
+                                    year = params$year, month = params$month, region = "England") # Configuration option defined in the Prescriptions package. This line specifies where to save the output automatically downloaded from the package (rootdir), and provides parameters for year, month and region.
+
+# can also use the here() package for line 31 like this make sure to list here library 
+#settings = PrescRiptions::setConfig(rootdir = here::here(), year = params$year, month = params$month, region = “England”)
 
 dataAll = PrescRiptions::monthlyData_import(settings, sample = TRUE)# Imports data from repo and website
 
